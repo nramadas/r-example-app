@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'devServer' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose run-script [ 'predevServer', 'devServer', 'postdevServer' ]
+5 info lifecycle @~predevServer: @
+6 silly lifecycle @~predevServer: no script for predevServer, continuing
+7 info lifecycle @~devServer: @
+8 verbose lifecycle @~devServer: unsafe-perm in lifecycle true
+9 verbose lifecycle @~devServer: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/niranjan.ramadas/Documents/example-app/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/MacGPG2/bin
+10 verbose lifecycle @~devServer: CWD: /Users/niranjan.ramadas/Documents/example-app
+11 silly lifecycle @~devServer: Args: [ '-c', 'node ./bin/Server.js' ]
+12 silly lifecycle @~devServer: Returned: code: 1  signal: null
+13 info lifecycle @~devServer: Failed to exec devServer script
+14 verbose stack Error: @ devServer: `node ./bin/Server.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid @
+16 verbose cwd /Users/niranjan.ramadas/Documents/example-app
+17 error Darwin 15.2.0
+18 error argv "/usr/local/Cellar/node/5.3.0/bin/node" "/usr/local/bin/npm" "run" "devServer"
+19 error node v5.3.0
+20 error npm  v3.3.12
+21 error code ELIFECYCLE
+22 error @ devServer: `node ./bin/Server.js`
+22 error Exit status 1
+23 error Failed at the @ devServer script 'node ./bin/Server.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the  package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node ./bin/Server.js
+23 error You can get their info via:
+23 error     npm owner ls
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
