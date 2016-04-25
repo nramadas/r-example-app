@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "watch": "./node_modules/.bin/blueprints -w",
-    "build": "./node_modules/.bin/blueprints",
-    "devServer": "node ./bin/ProductionServer.js",
+    "watch": "blueprints -w",
+    "build": "blueprints",
+    "prodbuild": "blueprints -p",
+    "devServer": "node ./bin/Server.js",
     "server": "node ./bin/ProductionServer.js"
   },
   "dependencies": {
     "@r/api-client": "1.23.5",
-    "@r/build": "0.0.6",
+    "@r/build": "^0.0.9",
     "@r/middleware": "0.5.3",
     "@r/platform": "0.0.16",
     "autoprefixer": "6.3.6",
