@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "watch": "./node_modules/.bin/blueprints -w",
+    "build": "./node_modules/.bin/blueprints",
+    "devServer": "node ./bin/ProductionServer.js",
+    "server": "node ./bin/ProductionServer.js"
+  },
+  "dependencies": {
+    "@r/api-client": "1.23.5",
+    "@r/build": "0.0.6",
+    "@r/middleware": "0.5.3",
+    "@r/platform": "0.0.16",
+    "autoprefixer": "6.3.6",
+    "fs": "0.0.2",
+    "koa": "2.0.0",
+    "koa-bodyparser": "3.0.0",
+    "koa-router": "7.0.1",
+    "koa-static": "3.0.0",
+    "lodash": "4.11.1",
+    "react": "15.0.1",
+    "react-dom": "15.0.1",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2",
+    "reselect": "2.5.1"
+  }
+}
