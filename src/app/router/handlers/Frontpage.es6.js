@@ -5,6 +5,6 @@ export default class Frontpage extends BaseHandler {
   async [METHODS.GET](dispatch, getState, utils) {
     const { originalUrl } = this;
 
-    dispatch(platformActions.setPage('frontpage', '', originalUrl));
+    this.setPage('%%frontpage');
   }
 }

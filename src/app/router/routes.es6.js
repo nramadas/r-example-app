@@ -1,5 +1,6 @@
-import Frontpage from './handlers/Frontpage.es6.js';
+import Frontpage from './handlers/Frontpage';
 
 export default [
   ['/', Frontpage],
+  ['/r/:subredditName', Frontpage],
 ];
