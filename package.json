@@ -7,10 +7,12 @@
     "server": "node ./bin/ProductionServer.js"
   },
   "dependencies": {
-    "@r/api-client": "1.23.5",
+    "@r/api-client": "^3.2.3",
     "@r/build": "0.0.11",
     "@r/middleware": "0.5.3",
-    "@r/platform": "0.0.19",
+    "@r/platform": "0.0.22",
+    "@r/private": "0.0.8",
+    "atob": "2.0.3",
     "autoprefixer": "6.3.6",
     "babel-polyfill": "^6.7.4",
     "fs": "0.0.2",
@@ -24,6 +26,8 @@
     "react-dom": "15.0.1",
     "react-redux": "4.4.5",
     "redux": "3.5.2",
-    "reselect": "2.5.1"
+    "reselect": "2.5.1",
+    "superagent": "1.8.3",
+    "superagent-retry": "^0.5.1"
   }
 }
