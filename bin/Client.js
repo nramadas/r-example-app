@@ -21648,18 +21648,27 @@
 	    key: 'render',
 	    value: function render() {
 	      return _jsx('div', {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["PageSelector"], {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["Page"], {
-	        url: '/'
-	      }, void 0, _jsx('div', {}, void 0, _jsx('div', {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
-	        href: '/r/cfb?foo=bar'
-	      }, void 0, 'Go to r/cfb')), _jsx('div', {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
-	        href: '/login'
-	      }, void 0, 'Login')))), _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["Page"], {
-	        url: '/r/:subredditName'
-	      }, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
-	        href: '/'
-	      }, void 0, 'Homepage')), _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["Page"], {
-	        url: '/login'
-	      }, void 0, _ref)), _ref2);
+	        url: '/',
+	        component: function component(pageData) {
+	          return _jsx('div', {}, void 0, _jsx('div', {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
+	            href: '/r/cfb?foo=bar'
+	          }, void 0, 'Go to r/cfb')), _jsx('div', {}, void 0, _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
+	            href: '/login'
+	          }, void 0, 'Login')));
+	        }
+	      }), _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["Page"], {
+	        url: '/r/:subredditName',
+	        component: function component(pageData) {
+	          return _jsx('div', {}, void 0, _jsx('div', {}, void 0, pageData.urlParams.subredditName), _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_platform_components__["Anchor"], {
+	            href: '/'
+	          }, void 0, 'Homepage'));
+	        }
+	      }), _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_4__r_platform_page__["Page"], {
+	        url: '/login',
+	        component: function component(pageData) {
+	          return _ref;
+	        }
+	      })), _ref2);
 	    }
 	  }]);
 
@@ -48071,13 +48080,11 @@
 						_createClass(Page, [{
 							key: 'render',
 							value: function render() {
-								var children = this.props.children;
+								var _props = this.props;
+								var component = _props.component;
+								var pageProperties = _props.pageProperties;
 
-								if (Array.isArray(children)) {
-									throw new Error('Page must have only one child');
-								}
-
-								return children;
+								return component(pageProperties);
 							}
 						}]);
 
@@ -48085,7 +48092,9 @@
 					}(_react2.default.Component);
 
 					Page.propTypes = {
-						url: T.string.isRequired
+						url: T.string.isRequired,
+						component: T.func.isRequired,
+						pageProperties: T.object
 					};
 
 					var _PageSelector = exports._PageSelector = function (_React$Component2) {
@@ -48100,18 +48109,21 @@
 						_createClass(_PageSelector, [{
 							key: 'render',
 							value: function render() {
-								var _props = this.props;
-								var children = _props.children;
-								var currentUrl = _props.currentUrl;
+								var _props2 = this.props;
+								var children = _props2.children;
+								var currentPage = _props2.currentPage;
+
+								var pages = Array.isArray(children) ? children : [children];
 
 								var defaultPage = null;
+								var resultPage = null;
 
 								var _iteratorNormalCompletion = true;
 								var _didIteratorError = false;
 								var _iteratorError = undefined;
 
 								try {
-									for (var _iterator = children[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+									for (var _iterator = pages[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
 										var page = _step.value;
 										var url = page.props.url;
 
@@ -48120,10 +48132,11 @@
 										}
 
 										var reg = (0, _pathToRegexp2.default)(url);
-										var result = reg.exec(currentUrl);
+										var result = reg.exec(currentPage.url);
 
 										if (result) {
-											return page;
+											resultPage = page;
+											break;
 										}
 									}
 								} catch (err) {
@@ -48141,7 +48154,11 @@
 									}
 								}
 
-								return defaultPage || false;
+								resultPage = resultPage || defaultPage;
+
+								if (resultPage) {
+									return _react2.default.cloneElement(resultPage, { pageProperties: currentPage });
+								}
 							}
 						}]);
 
@@ -48149,14 +48166,14 @@
 					}(_react2.default.Component);
 
 					_PageSelector.propTypes = {
-						children: T.arrayOf(T.element),
-						currentUrl: T.string.isRequired
+						children: T.oneOfType([T.arrayOf(T.element), T.object]),
+						currentPage: T.object.isRequired
 					};
 
 					var selector = (0, _reselect.createSelector)(function (state) {
-						return state.platform.currentPage.url;
-					}, function (currentUrl) {
-						return { currentUrl: currentUrl };
+						return state.platform.currentPage;
+					}, function (currentPage) {
+						return { currentPage: currentPage };
 					});
 
 					var PageSelector = exports.PageSelector = (0, _reactRedux.connect)(selector)(_PageSelector);

@@ -9,22 +9,36 @@ export default class App extends React.Component {
     return (
       <div>
         <PageSelector>
-          <Page url='/'>
-            <div>
+          <Page
+            url='/'
+            component={pageData => (
               <div>
-                <Anchor href='/r/cfb?foo=bar'>Go to r/cfb</Anchor>
+                <div>
+                  <Anchor href='/r/cfb?foo=bar'>Go to r/cfb</Anchor>
+                </div>
+                <div>
+                  <Anchor href='/login'>Login</Anchor>
+                </div>
               </div>
+            )}
+          />
+          <Page
+            url='/r/:subredditName'
+            component={pageData => (
               <div>
-                <Anchor href='/login'>Login</Anchor>
+                <div>
+                  { pageData.urlParams.subredditName }
+                </div>
+                <Anchor href='/'>Homepage</Anchor>
               </div>
-            </div>
-          </Page>
-          <Page url='/r/:subredditName'>
-            <Anchor href='/'>Homepage</Anchor>
-          </Page>
-          <Page url='/login'>
-            <Login/>
-          </Page>
+            )}
+          />
+          <Page
+            url='/login'
+            component={pageData => (
+              <Login/>
+            )}
+          />
         </PageSelector>
         <UrlSync/>
       </div>
