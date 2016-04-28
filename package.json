@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@r/api-client": "^3.2.3",
-    "@r/build": "0.0.11",
+    "@r/build": "0.0.12",
     "@r/middleware": "0.5.3",
     "@r/platform": "0.0.22",
     "@r/private": "0.0.10",
