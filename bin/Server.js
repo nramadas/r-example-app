@@ -38072,7 +38072,7 @@
 
 
 
-	var writeSessionToResponse = function writeSessionToResponse(ctx, data) {
+	/* harmony default export */ exports["a"] = function (ctx, data) {
 	  var session = /* harmony import */__WEBPACK_IMPORTED_MODULE_0__makeSessionFromData__["a"].bind()(data);
 	  /* harmony import */__WEBPACK_IMPORTED_MODULE_1__setSessionCookies__["a"].bind()(ctx, session);
 	  ctx.body = { session: session };
@@ -38083,8 +38083,6 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ = __webpack_require__(450);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default = __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ && __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default });
 	var _this = this;
 
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
@@ -38112,7 +38110,7 @@
 
 
 	              // writeSessionToResponse will set the cookies
-	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default.a.bind()(ctx, data);
+	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__["a"].bind()(ctx, data);
 	              _context.next = 15;
 	              break;
 
@@ -38175,8 +38173,6 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ = __webpack_require__(450);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default = __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ && __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default });
 	var _this = this;
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -38203,7 +38199,7 @@
 
 
 	              // writeSessionToResponse will also set the cookies
-	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default.a.bind()(ctx, _extends({}, data, { refresh_token: refreshToken }));
+	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__["a"].bind()(ctx, _extends({}, data, { refresh_token: refreshToken }));
 	              _context.next = 13;
 	              break;
 
