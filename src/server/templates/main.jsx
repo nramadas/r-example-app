@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactServerDom from 'react-dom/server';
 import { Provider } from 'react-redux';
-import App from '../app/App';
+import App from '../../app/App';
 
 export default function(data, store) {
   return ReactServerDom.renderToStaticMarkup(

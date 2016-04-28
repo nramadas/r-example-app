@@ -20342,65 +20342,7 @@
 	/* harmony default export */ exports["a"] = [['/', /* harmony import */__WEBPACK_IMPORTED_MODULE_0__handlers_Frontpage__["a"]], ['/r/:subredditName', /* harmony import */__WEBPACK_IMPORTED_MODULE_0__handlers_Frontpage__["a"]], ['/login', /* harmony import */__WEBPACK_IMPORTED_MODULE_1__handlers_Login__["a"]]];
 
 /***/ },
-/* 212 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(55);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __WEBPACK_IMPORTED_MODULE_0_react__ && __WEBPACK_IMPORTED_MODULE_0_react__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0_react__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0_react__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0_react___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0_react___default });
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom_server__ = __webpack_require__(379);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom_server___default = __WEBPACK_IMPORTED_MODULE_1_react_dom_server__ && __WEBPACK_IMPORTED_MODULE_1_react_dom_server__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_1_react_dom_server__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_1_react_dom_server__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_1_react_dom_server___default });
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(115);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux___default = __WEBPACK_IMPORTED_MODULE_2_react_redux__ && __WEBPACK_IMPORTED_MODULE_2_react_redux__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_2_react_redux__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_2_react_redux__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_2_react_redux___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_2_react_redux___default });
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_App__ = __webpack_require__(221);
-	var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
-
-
-
-
-
-
-	var _ref = _jsx('meta', {
-	  charSet: 'utf8'
-	});
-
-	var _ref2 = _jsx('meta', {
-	  name: 'viewport',
-	  content: 'width=device-width, initial-scale=1'
-	});
-
-	var _ref3 = _jsx('link', {
-	  rel: 'stylesheet',
-	  href: '/Client.css'
-	});
-
-	var _ref4 = _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__app_App__["a"], {});
-
-	var _ref5 = _jsx('script', {
-	  type: 'text/javascript',
-	  src: '/Client.js'
-	});
-
-	/* harmony default export */ exports["a"] = function (data, store) {
-	  return /* harmony import */__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default.a.renderToStaticMarkup(_jsx('html', {
-	    lang: 'en'
-	  }, void 0, _jsx('head', {}, void 0, _jsx('title', {}, void 0, 'Reddit'), _ref, _ref2, _jsx('script', {
-	    id: 'data',
-	    type: 'application/json',
-	    dangerouslySetInnerHTML: { __html: JSON.stringify(data) }
-	  }), _ref3), _jsx('body', {}, void 0, _jsx('div', {
-	    id: 'container',
-	    dangerouslySetInnerHTML: {
-	      __html: /* harmony import */__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default.a.renderToString(_jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
-	        store: store
-	      }, void 0, _ref4))
-	    }
-	  }), _ref5)));
-	};
-
-/***/ },
+/* 212 */,
 /* 213 */
 /***/ function(module, exports) {
 
@@ -21192,19 +21134,17 @@
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_koa_static__ = __webpack_require__(76);
 	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_koa_static___default = __WEBPACK_IMPORTED_MODULE_4_koa_static__ && __WEBPACK_IMPORTED_MODULE_4_koa_static__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_4_koa_static__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_4_koa_static__; }
 	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_4_koa_static___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_4_koa_static___default });
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_Base64__ = __webpack_require__(117);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_Base64___default = __WEBPACK_IMPORTED_MODULE_5_Base64__ && __WEBPACK_IMPORTED_MODULE_5_Base64__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_5_Base64__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_5_Base64__; }
-	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_5_Base64___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_5_Base64___default });
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_router_routes__ = __webpack_require__(211);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__serverTemplates_main__ = __webpack_require__(212);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_reducers_importAll__ = __webpack_require__(210);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_models_Session__ = __webpack_require__(116);
-	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_actions_session__ = __webpack_require__(75);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_router_routes__ = __webpack_require__(211);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__server_templates_main__ = __webpack_require__(449);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_reducers_importAll__ = __webpack_require__(210);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__server_session_loginproxy__ = __webpack_require__(451);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__server_session_logoutproxy__ = __webpack_require__(452);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__server_session_refreshproxy__ = __webpack_require__(453);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__server_session_dispatchSession__ = __webpack_require__(456);
 	var _this = this;
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
+
 
 
 
@@ -21222,6 +21162,7 @@
 	var binFiles = /* harmony import */__WEBPACK_IMPORTED_MODULE_4_koa_static___default.a.bind()('bin');
 	var assetFiles = /* harmony import */__WEBPACK_IMPORTED_MODULE_4_koa_static___default.a.bind()('assets');
 
+	// set up the private API
 	var CONFIG = {
 	  origin: 'https://www.reddit.com',
 	  oauthAppOrigin: 'https://m.reddit.com',
@@ -21229,84 +21170,28 @@
 	  clientSecret: process.env.OAUTH_SECRET
 	};
 
-	var COOKIE_OPTIONS = {
-	  // signed: true,
-	  httpOnly: false,
-	  overwrite: true,
-	  maxAge: 1000 * 60 * 60
-	};
-
-	var AGELESS_COOKIE_OPTIONS = _extends({}, COOKIE_OPTIONS, {
-	  maxAge: 1000 * 60 * 60 * 24 * 365
-	});
-
 	var api = new (/* harmony import */__WEBPACK_IMPORTED_MODULE_3__r_private__["privateAPI"].bind()(/* harmony import */__WEBPACK_IMPORTED_MODULE_2__r_api_client___default.a))(CONFIG);
 
-	var writeSessionToResponse = function writeSessionToResponse(ctx, data) {
-	  var now = new Date();
-
-	  var session = new /* harmony import */__WEBPACK_IMPORTED_MODULE_9__app_models_Session__["a"]({
-	    accessToken: data.access_token,
-	    tokenType: data.token_type,
-	    expires: now.setSeconds(now.getSeconds() + data.expires_in),
-	    refreshToken: data.refresh_token,
-	    scope: data.scope
-	  });
-
-	  ctx.cookies.set('token', session.tokenString, _extends({}, COOKIE_OPTIONS, {
-	    expires: session.expires,
-	    maxAge: session.expires * 1000
-	  }));
-
-	  ctx.body = { session: session };
-	};
-
+	// Create and launch the server
 	/* harmony import */__WEBPACK_IMPORTED_MODULE_1__r_platform_server___default.a.bind()({
-	  routes: /* harmony import */__WEBPACK_IMPORTED_MODULE_6__app_router_routes__["a"],
-	  template: /* harmony import */__WEBPACK_IMPORTED_MODULE_7__serverTemplates_main__["a"],
-	  reducers: /* harmony import */__WEBPACK_IMPORTED_MODULE_8__app_reducers_importAll__["a"],
+	  routes: /* harmony import */__WEBPACK_IMPORTED_MODULE_5__app_router_routes__["a"],
+	  template: /* harmony import */__WEBPACK_IMPORTED_MODULE_6__server_templates_main__["a"],
+	  reducers: /* harmony import */__WEBPACK_IMPORTED_MODULE_7__app_reducers_importAll__["a"],
 	  dispatchBeforeNavigation: function () {
 	    var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ctx, dispatch, getState, utils) {
-	      var sessionData, session;
 	      return regeneratorRuntime.wrap(function _callee$(_context) {
 	        while (1) {
 	          switch (_context.prev = _context.next) {
 	            case 0:
-	              _context.prev = 0;
-	              sessionData = JSON.parse(/* harmony import */__WEBPACK_IMPORTED_MODULE_5_Base64__["atob"].bind()(ctx.cookies.get('token')));
-	              session = new /* harmony import */__WEBPACK_IMPORTED_MODULE_9__app_models_Session__["a"](sessionData);
+	              _context.next = 2;
+	              return /* harmony import */__WEBPACK_IMPORTED_MODULE_11__server_session_dispatchSession__["a"].bind()(ctx, dispatch, api);
 
-	              if (session.isValid) {
-	                _context.next = 7;
-	                break;
-	              }
-
-	              _context.next = 6;
-	              return session.refresh();
-
-	            case 6:
-	              session = _context.sent;
-
-	            case 7:
-
-	              dispatch(/* harmony namespace import */ __WEBPACK_IMPORTED_MODULE_10__app_actions_session__.setSession(session));
-	              _context.next = 14;
-	              break;
-
-	            case 10:
-	              _context.prev = 10;
-	              _context.t0 = _context['catch'](0);
-
-	              console.log(_context.t0);
-	              console.log(_context.t0.stack);
-	              // ignore for now.
-
-	            case 14:
+	            case 2:
 	            case 'end':
 	              return _context.stop();
 	          }
 	        }
-	      }, _callee, _this, [[0, 10]]);
+	      }, _callee, _this);
 	    }));
 
 	    return function dispatchBeforeNavigation(_x, _x2, _x3, _x4) {
@@ -21315,110 +21200,11 @@
 	  }(),
 	  preRouteServerMiddleware: [binFiles, assetFiles],
 	  getServerRouter: function getServerRouter(router) {
-	    router.post('/loginproxy', function () {
-	      var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(ctx, next) {
-	        var _ctx$request$body, username, password, data;
-
-	        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-	          while (1) {
-	            switch (_context2.prev = _context2.next) {
-	              case 0:
-	                _ctx$request$body = ctx.request.body;
-	                username = _ctx$request$body.username;
-	                password = _ctx$request$body.password;
-	                _context2.prev = 3;
-	                _context2.next = 6;
-	                return api.login(username, password);
-
-	              case 6:
-	                data = _context2.sent;
-
-	                writeSessionToResponse(ctx, data);
-	                _context2.next = 15;
-	                break;
-
-	              case 10:
-	                _context2.prev = 10;
-	                _context2.t0 = _context2['catch'](3);
-
-	                console.log(_context2.t0);
-	                console.log(_context2.t0.stack);
-	                ctx.throw(401, 'Incorrect username or password');
-
-	              case 15:
-	              case 'end':
-	                return _context2.stop();
-	            }
-	          }
-	        }, _callee2, _this, [[3, 10]]);
-	      }));
-
-	      return function (_x5, _x6) {
-	        return ref.apply(this, arguments);
-	      };
-	    }());
-
-	    router.post('/refreshproxy', function () {
-	      var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(ctx, next) {
-	        var refreshToken, data;
-	        return regeneratorRuntime.wrap(function _callee3$(_context3) {
-	          while (1) {
-	            switch (_context3.prev = _context3.next) {
-	              case 0:
-	                refreshToken = ctx.request.body.refreshToken;
-	                _context3.prev = 1;
-	                _context3.next = 4;
-	                return api.refreshToken(refreshToken);
-
-	              case 4:
-	                data = _context3.sent;
-
-	                writeSessionToResponse(ctx, _extends({}, data, { refresh_token: refreshToken }));
-	                _context3.next = 13;
-	                break;
-
-	              case 8:
-	                _context3.prev = 8;
-	                _context3.t0 = _context3['catch'](1);
-
-	                console.log(_context3.t0);
-	                console.log(_context3.t0.stack);
-	                ctx.throw(400, 'Error');
-
-	              case 13:
-	              case 'end':
-	                return _context3.stop();
-	            }
-	          }
-	        }, _callee3, _this, [[1, 8]]);
-	      }));
-
-	      return function (_x7, _x8) {
-	        return ref.apply(this, arguments);
-	      };
-	    }());
-
-	    router.post('/logout', function () {
-	      var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee4(ctx, next) {
-	        return regeneratorRuntime.wrap(function _callee4$(_context4) {
-	          while (1) {
-	            switch (_context4.prev = _context4.next) {
-	              case 0:
-	                ctx.cookies.set('token');
-	                ctx.redirect('/');
-
-	              case 2:
-	              case 'end':
-	                return _context4.stop();
-	            }
-	          }
-	        }, _callee4, _this);
-	      }));
-
-	      return function (_x9, _x10) {
-	        return ref.apply(this, arguments);
-	      };
-	    }());
+	    // private routes for login, logout, register, and token refresh
+	    /* harmony import */__WEBPACK_IMPORTED_MODULE_8__server_session_loginproxy__["a"].bind()(router, api);
+	    /* harmony import */__WEBPACK_IMPORTED_MODULE_9__server_session_logoutproxy__["a"].bind()(router, api);
+	    // registerproxy(router, api);
+	    /* harmony import */__WEBPACK_IMPORTED_MODULE_10__server_session_refreshproxy__["a"].bind()(router, api);
 	  }
 	})();
 
@@ -38217,6 +38003,357 @@
 	}
 
 	module.exports = quoteAttributeValueForBrowser;
+
+/***/ },
+/* 449 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(55);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __WEBPACK_IMPORTED_MODULE_0_react__ && __WEBPACK_IMPORTED_MODULE_0_react__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0_react__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0_react__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0_react___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0_react___default });
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom_server__ = __webpack_require__(379);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom_server___default = __WEBPACK_IMPORTED_MODULE_1_react_dom_server__ && __WEBPACK_IMPORTED_MODULE_1_react_dom_server__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_1_react_dom_server__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_1_react_dom_server__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_1_react_dom_server___default });
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__(115);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux___default = __WEBPACK_IMPORTED_MODULE_2_react_redux__ && __WEBPACK_IMPORTED_MODULE_2_react_redux__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_2_react_redux__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_2_react_redux__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_2_react_redux___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_2_react_redux___default });
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_App__ = __webpack_require__(221);
+	var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
+
+
+
+
+
+	var _ref = _jsx('meta', {
+	  charSet: 'utf8'
+	});
+
+	var _ref2 = _jsx('meta', {
+	  name: 'viewport',
+	  content: 'width=device-width, initial-scale=1'
+	});
+
+	var _ref3 = _jsx('link', {
+	  rel: 'stylesheet',
+	  href: '/Client.css'
+	});
+
+	var _ref4 = _jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_3__app_App__["a"], {});
+
+	var _ref5 = _jsx('script', {
+	  type: 'text/javascript',
+	  src: '/Client.js'
+	});
+
+	/* harmony default export */ exports["a"] = function (data, store) {
+	  return /* harmony import */__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default.a.renderToStaticMarkup(_jsx('html', {
+	    lang: 'en'
+	  }, void 0, _jsx('head', {}, void 0, _jsx('title', {}, void 0, 'Reddit'), _ref, _ref2, _jsx('script', {
+	    id: 'data',
+	    type: 'application/json',
+	    dangerouslySetInnerHTML: { __html: JSON.stringify(data) }
+	  }), _ref3), _jsx('body', {}, void 0, _jsx('div', {
+	    id: 'container',
+	    dangerouslySetInnerHTML: {
+	      __html: /* harmony import */__WEBPACK_IMPORTED_MODULE_1_react_dom_server___default.a.renderToString(_jsx(/* harmony import */__WEBPACK_IMPORTED_MODULE_2_react_redux__["Provider"], {
+	        store: store
+	      }, void 0, _ref4))
+	    }
+	  }), _ref5)));
+	};
+
+/***/ },
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__makeSessionFromData__ = __webpack_require__(454);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__setSessionCookies__ = __webpack_require__(455);
+
+
+
+	var writeSessionToResponse = function writeSessionToResponse(ctx, data) {
+	  var session = /* harmony import */__WEBPACK_IMPORTED_MODULE_0__makeSessionFromData__["a"].bind()(data);
+	  /* harmony import */__WEBPACK_IMPORTED_MODULE_1__setSessionCookies__["a"].bind()(ctx, session);
+	  ctx.body = { session: session };
+	};
+
+/***/ },
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ = __webpack_require__(450);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default = __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ && __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default });
+	var _this = this;
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
+
+
+
+	/* harmony default export */ exports["a"] = function (router, api) {
+	  router.post('/loginproxy', function () {
+	    var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ctx, next) {
+	      var _ctx$request$body, username, password, data;
+
+	      return regeneratorRuntime.wrap(function _callee$(_context) {
+	        while (1) {
+	          switch (_context.prev = _context.next) {
+	            case 0:
+	              _ctx$request$body = ctx.request.body;
+	              username = _ctx$request$body.username;
+	              password = _ctx$request$body.password;
+	              _context.prev = 3;
+	              _context.next = 6;
+	              return api.login(username, password);
+
+	            case 6:
+	              data = _context.sent;
+
+
+	              // writeSessionToResponse will set the cookies
+	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default.a.bind()(ctx, data);
+	              _context.next = 15;
+	              break;
+
+	            case 10:
+	              _context.prev = 10;
+	              _context.t0 = _context['catch'](3);
+
+	              console.log(_context.t0);
+	              console.log(_context.t0.stack);
+	              ctx.throw(401, 'Incorrect username or password');
+
+	            case 15:
+	            case 'end':
+	              return _context.stop();
+	          }
+	        }
+	      }, _callee, _this, [[3, 10]]);
+	    }));
+
+	    return function (_x, _x2) {
+	      return ref.apply(this, arguments);
+	    };
+	  }());
+	};
+
+/***/ },
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var _this = this;
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
+
+	/* harmony default export */ exports["a"] = function (router, api) {
+	  router.post('/logout', function () {
+	    var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ctx, next) {
+	      return regeneratorRuntime.wrap(function _callee$(_context) {
+	        while (1) {
+	          switch (_context.prev = _context.next) {
+	            case 0:
+	              ctx.cookies.set('token');
+	              ctx.redirect('/');
+
+	            case 2:
+	            case 'end':
+	              return _context.stop();
+	          }
+	        }
+	      }, _callee, _this);
+	    }));
+
+	    return function (_x, _x2) {
+	      return ref.apply(this, arguments);
+	    };
+	  }());
+	};
+
+/***/ },
+/* 453 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ = __webpack_require__(450);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default = __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__ && __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default });
+	var _this = this;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
+
+
+
+	/* harmony default export */ exports["a"] = function (router, api) {
+	  router.post('/refreshproxy', function () {
+	    var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ctx, next) {
+	      var refreshToken, data;
+	      return regeneratorRuntime.wrap(function _callee$(_context) {
+	        while (1) {
+	          switch (_context.prev = _context.next) {
+	            case 0:
+	              refreshToken = ctx.request.body.refreshToken;
+	              _context.prev = 1;
+	              _context.next = 4;
+	              return api.refreshToken(refreshToken);
+
+	            case 4:
+	              data = _context.sent;
+
+
+	              // writeSessionToResponse will also set the cookies
+	              /* harmony import */__WEBPACK_IMPORTED_MODULE_0__writeSessionToResponse___default.a.bind()(ctx, _extends({}, data, { refresh_token: refreshToken }));
+	              _context.next = 13;
+	              break;
+
+	            case 8:
+	              _context.prev = 8;
+	              _context.t0 = _context['catch'](1);
+
+	              console.log(_context.t0);
+	              console.log(_context.t0.stack);
+	              ctx.throw(400, 'Error');
+
+	            case 13:
+	            case 'end':
+	              return _context.stop();
+	          }
+	        }
+	      }, _callee, _this, [[1, 8]]);
+	    }));
+
+	    return function (_x, _x2) {
+	      return ref.apply(this, arguments);
+	    };
+	  }());
+	};
+
+/***/ },
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_models_Session__ = __webpack_require__(116);
+
+
+	/* harmony default export */ exports["a"] = function (data) {
+	  var now = new Date();
+
+	  return new /* harmony import */__WEBPACK_IMPORTED_MODULE_0__app_models_Session__["a"]({
+	    accessToken: data.access_token,
+	    tokenType: data.token_type,
+	    expires: now.setSeconds(now.getSeconds() + data.expires_in),
+	    refreshToken: data.refresh_token,
+	    scope: data.scope
+	  });
+	};
+
+/***/ },
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var COOKIE_OPTIONS = {
+	  // signed: true,
+	  httpOnly: false,
+	  overwrite: true,
+	  maxAge: 1000 * 60 * 60
+	};
+
+	/* harmony default export */ exports["a"] = function (ctx, session) {
+	  ctx.cookies.set('token', session.tokenString, _extends({}, COOKIE_OPTIONS, {
+	    expires: session.expires,
+	    maxAge: session.expires * 1000
+	  }));
+	};
+
+/***/ },
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Base64__ = __webpack_require__(117);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_Base64___default = __WEBPACK_IMPORTED_MODULE_0_Base64__ && __WEBPACK_IMPORTED_MODULE_0_Base64__.__esModule ? function() { return __WEBPACK_IMPORTED_MODULE_0_Base64__['default'] } : function() { return __WEBPACK_IMPORTED_MODULE_0_Base64__; }
+	/* harmony import */ Object.defineProperty(__WEBPACK_IMPORTED_MODULE_0_Base64___default, 'a', { get: __WEBPACK_IMPORTED_MODULE_0_Base64___default });
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_models_Session__ = __webpack_require__(116);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__makeSessionFromData__ = __webpack_require__(454);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__setSessionCookies__ = __webpack_require__(455);
+	/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_actions_session__ = __webpack_require__(75);
+	var _this = this;
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { return step("next", value); }, function (err) { return step("throw", err); }); } } return step("next"); }); }; }
+
+
+
+
+
+
+
+
+	/* harmony default export */ exports["a"] = (function () {
+	  var ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(ctx, dispatch, api) {
+	    var sessionData, session, data;
+	    return regeneratorRuntime.wrap(function _callee$(_context) {
+	      while (1) {
+	        switch (_context.prev = _context.next) {
+	          case 0:
+	            _context.prev = 0;
+
+	            // try to create a session from the existing cookie
+	            // if the session is malformed somehow, the catch will trigger when trying
+	            // to access it
+	            sessionData = JSON.parse(/* harmony import */__WEBPACK_IMPORTED_MODULE_0_Base64__["atob"].bind()(ctx.cookies.get('token')));
+	            session = new /* harmony import */__WEBPACK_IMPORTED_MODULE_1__app_models_Session__["a"](sessionData);
+
+	            // if the session is invalid, try to use the refresh token to grab a new
+	            // session.
+
+	            if (session.isValid) {
+	              _context.next = 9;
+	              break;
+	            }
+
+	            _context.next = 6;
+	            return api.refreshToken(sessionData.refreshToken);
+
+	          case 6:
+	            data = _context.sent;
+
+	            session = /* harmony import */__WEBPACK_IMPORTED_MODULE_2__makeSessionFromData__["a"].bind()(_extends({}, data, { refreshToken: sessionData.refreshToken }));
+
+	            // don't forget to set the cookies with the new session, or the session
+	            // will remain invalid the next time the page is fetched
+	            /* harmony import */__WEBPACK_IMPORTED_MODULE_3__setSessionCookies__["a"].bind()(ctx, session);
+
+	          case 9:
+
+	            // push the session into the store
+	            dispatch(/* harmony namespace import */ __WEBPACK_IMPORTED_MODULE_4__app_actions_session__.setSession(session));
+	            _context.next = 16;
+	            break;
+
+	          case 12:
+	            _context.prev = 12;
+	            _context.t0 = _context['catch'](0);
+
+	            console.log(_context.t0);
+	            console.log(_context.t0.stack);
+	            // ignore for now.
+
+	          case 16:
+	          case 'end':
+	            return _context.stop();
+	        }
+	      }
+	    }, _callee, _this, [[0, 12]]);
+	  }));
+
+	  return function (_x, _x2, _x3) {
+	    return ref.apply(this, arguments);
+	  };
+	})();
 
 /***/ }
 /******/ ]);
