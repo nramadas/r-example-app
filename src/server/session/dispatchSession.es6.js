@@ -27,6 +27,7 @@ export default async (ctx, dispatch, api) => {
     // push the session into the store
     dispatch(sessionActions.setSession(session));
   } catch (e) {
+    console.log('IGNORE');
     console.log(e);
     console.log(e.stack);
     // ignore for now.

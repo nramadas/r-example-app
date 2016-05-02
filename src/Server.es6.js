@@ -23,6 +23,8 @@ const CONFIG = {
   clientSecret: process.env.OAUTH_SECRET,
 };
 
+console.log(CONFIG);
+
 const api = new (privateAPI(API))(CONFIG);
 
 // Create and launch the server
