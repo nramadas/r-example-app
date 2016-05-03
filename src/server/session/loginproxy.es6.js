@@ -1,12 +1,13 @@
 import writeSessionToResponse from './writeSessionToResponse';
+import { PrivateAPI } from '@r/private';
 
-export default (router, api) => {
+export default (router, apiOptions) => {
   router.post('/loginproxy', async (ctx, next) => {
     const { username, password } = ctx.request.body;
 
     try {
       // try to grab a session from the api
-      const data = await api.login(username, password);
+      const data = await PrivateAPI.login(apiOptions, username, password);
 
       // writeSessionToResponse will set the cookies
       writeSessionToResponse(ctx, data);

@@ -7,11 +7,11 @@
     "server": "node ./bin/ProductionServer.js"
   },
   "dependencies": {
-    "@r/api-client": "~3.2.3",
+    "@r/api-client": "~3.7.0",
     "@r/build": "0.0.12",
     "@r/middleware": "0.5.3",
     "@r/platform": "0.0.24",
-    "@r/private": "0.0.10",
+    "@r/private": "~0.1.0",
     "atob": "2.0.3",
     "autoprefixer": "6.3.6",
     "babel-polyfill": "^6.7.4",

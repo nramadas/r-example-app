@@ -1,11 +1,12 @@
 import { atob } from 'Base64';
+import { PrivateAPI } from '@r/private';
 
 import Session from '../../app/models/Session';
 import makeSessionFromData from './makeSessionFromData';
 import setSessionCookies from './setSessionCookies';
 import * as sessionActions from '../../app/actions/session';
 
-export default async (ctx, dispatch, api) => {
+export default async (ctx, dispatch, apiOptions) => {
   try {
     // try to create a session from the existing cookie
     // if the session is malformed somehow, the catch will trigger when trying
@@ -16,7 +17,7 @@ export default async (ctx, dispatch, api) => {
     // if the session is invalid, try to use the refresh token to grab a new
     // session.
     if (!session.isValid) {
-      const data = await api.refreshToken(sessionData.refreshToken);
+      const data = await PrivateAPI.refreshToken(apiOptions, sessionData.refreshToken);
       session = makeSessionFromData({ ...data, refreshToken: sessionData.refreshToken });
 
       // don't forget to set the cookies with the new session, or the session
